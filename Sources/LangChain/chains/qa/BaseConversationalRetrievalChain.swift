@@ -9,12 +9,12 @@ import Foundation
 public class BaseConversationalRetrievalChain: DefaultChain {
 
     static let _template = """
-    以下の会話とそれに続く質問を、独立した質問に書き換えてください。
+    Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question, in JAPANESE language.
 
-    会話履歴:
+    Chat History:
     {chat_history}
-    続きの質問: {question}
-    独立した質問:
+    Follow Up Input: {question}
+    Standalone question:
     """
     static let CONDENSE_QUESTION_PROMPT = PromptTemplate(input_variables: ["chat_history", "question"], partial_variable: [:], template: _template)
 
