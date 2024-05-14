@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/utmM/openai-kit",
       "state" : {
+        "branch" : "main",
         "revision" : "5cd208e8d66b83d52c18f86cc6a0f32c671f7347",
-        "version" : "1.8.5"
       }
     },
     {
